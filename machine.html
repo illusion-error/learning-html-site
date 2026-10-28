@@ -17,7 +17,48 @@
     <main id="main" class="wrap page-content">
       <p class="eyebrow">USELESS MACHINE</p>
       <h1>A machine with no useful purpose.</h1>
-      <p class="lead">The interactive machine and its small keyboard-friendly game are added in batch 4.</p>
+      <p class="lead">Turn it on and it immediately finds a way to turn itself off. Then try to catch its smaller, faster cousin.</p>
+
+      <section class="machine-layout" aria-labelledby="machine-title">
+        <div class="machine-copy">
+          <p class="eyebrow">EXPERIMENT 01</p>
+          <h2 id="machine-title">The machine disagrees.</h2>
+          <p>It has one job: to undo the only useful thing you can do. The switch works with a mouse, touch or the Enter and Space keys.</p>
+          <button class="control-button" id="machine-switch" type="button" aria-pressed="false">Turn the machine on</button>
+          <p id="machine-status" class="status-message" role="status" aria-live="polite">The machine is waiting.</p>
+        </div>
+
+        <div class="machine-stage" id="machine-visual" aria-hidden="true">
+          <div class="machine-box">
+            <span class="machine-label">USELESS 01</span>
+            <span class="machine-slot"></span>
+            <span class="machine-light"></span>
+            <span class="machine-hand"><span></span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-panel" aria-labelledby="game-title">
+        <div class="game-heading">
+          <div>
+            <p class="eyebrow">EXPERIMENT 02</p>
+            <h2 id="game-title">Catch the runaway switch</h2>
+            <p>Score as many taps as you can in ten seconds. The moving switch remains a real button, so you can use Tab and Enter as well as a mouse or touch.</p>
+          </div>
+          <button class="control-button" id="start-game" type="button">Start game</button>
+        </div>
+
+        <div class="game-scoreboard" aria-label="Game score">
+          <p><span>State</span> <strong id="game-state" aria-live="polite">Ready</strong></p>
+          <p><span>Score</span> <strong id="game-score">0</strong></p>
+          <p><span>Time left</span> <strong id="time-left">10 seconds</strong></p>
+        </div>
+
+        <div class="game-area" id="game-area">
+          <button id="runaway-switch" class="runaway-switch" type="button" hidden>Catch me</button>
+        </div>
+        <p id="game-message" class="status-message" role="status" aria-live="polite">Press Start game when you are ready.</p>
+      </section>
     </main>
     <footer class="site-footer"><div class="wrap"><p>Learning HTML</p></div></footer>
     <script src="nav.js"></script>
