@@ -107,7 +107,7 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -.04em; }
   .machine-layout { grid-template-columns: 1fr; }
   .game-heading { flex-direction: column; }
   .game-scoreboard { grid-template-columns: 1fr; }
-  .hero img { max-width: 32rem; }
+  .hero img { max-width: 100%; height: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
